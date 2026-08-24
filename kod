@@ -1,0 +1,191 @@
+#region TAsk1
+//Verilmiş ədədi kvadratına yüksəldən metod.
+//(Metodu cağırdıqdan sonra variable kvadratına yüksəlmiş olmalıdı)
+//int Eded(int num)
+//{
+//    return num * num;
+//}
+//Console.WriteLine(Eded(9));
+#endregion
+#region taSK2
+////.Verilmiş ədədlər siyahısını içindəki bütün ədədlər kvadratına yüksəlmiş array-ə çevirən metod
+//int[] nums = new int [3];
+//int[] ededler(int[] nums)
+//{
+//    for ( int i = 0;i<nums.Length;i++)
+//    {
+//        nums[i]= nums[i] * nums[i];
+
+//    }
+//    return nums;
+//}
+//int[] cavab = ededler(new int[] { 1, 2, 3, 4 });
+
+//foreach (int eded in cavab)
+//{
+//    Console.WriteLine(eded);
+//}  
+#endregion
+#region TAsk3
+//Parametr olaraq 1 string dəyər qəbul edən və həmin string dəyəri icində bosluqlar qalmayacaq hala
+//gətirən metod.Misal olaraq, name = " Hikmet  Abbasov " deyə bir variable-mız varsa onu yaratdigimiz
+//metoda göndərdikdə variable-daki dəyər "HikmətAbbasov" olmalıdır.
+//string Deyer(string name)
+//{
+//    string newDeyer = "";
+//    for (int i = 0; i < name.Length; i++)
+//    {
+//        if (name[i] != ' ')
+//        {
+//            newDeyer += name[i];
+//        }
+//    }
+//    return newDeyer;
+//}
+//Console.WriteLine(Deyer("Hikmet Abbasov"));
+#endregion
+//#region TAsk4
+//using System.Globalization;
+//using System.Runtime.CompilerServices;
+
+//bool Number (int num)
+//{
+//    if(num%21==0)
+//    {
+//        return true;
+//    }
+//    else
+//    {
+//        return false;
+//    }
+//}
+//Console.WriteLine(Number(42));
+//#endregion
+
+
+//Verilmis n ve m (n<m) ededleri arasindaki tek ededlerin sayini tapin.
+//Verilmis n ve m (n<m) ededleri arasindaki tek ededlerin cemini tapin.
+//Verilmis n tam ededinin sade ve ya murekkeb oldugunu tapin.
+//Verilmish arrayin icindeki cut ededlerin cemini tapin.
+#region Task5
+//int Number(int num1, int num2)
+//{
+//    int count = 0;
+//    for (int i = num1; i <= num2; i++)
+//    {
+//        if (i % 2 != 0)
+//        {
+//            count++;
+//        }
+//    }
+//    return count;
+//}
+//Console.WriteLine(Number(1, 15));
+#endregion
+#region Task6
+//Verilmis n ve m (n<m) ededleri arasindaki tek ededlerin cemini tapin.
+//int Number(int num1,int num2)
+//{
+//    int sum = 0;
+//    for(int i=num1;i<=num2;i++)
+//    {
+//        if(i%2!=0)
+//        {
+//            sum += i;
+//        }
+//    }
+//    return sum;
+//}
+//Console.WriteLine(Number(1, 5));
+#endregion
+#region Task7
+//Verilmish arrayin icindeki cut ededlerin cemini tapin.
+//int[] nums = new int[5];
+//int array(int[] nums)
+//{
+//    int sum = 0;
+//    for (int i = 0; i < nums.Length; i++)
+//    {
+//        if (nums[i] %2==0)
+//        {
+//            sum += nums[i];
+//        }
+//    }
+//    return sum;
+//}
+//int cavab = array (new int[] { 1, 2, 3, 4 });
+//Console.WriteLine(cavab);
+#endregion
+#region Task8
+//int[] RemoveMin(int[] nums)
+//{
+//    int min = nums[0];
+//    for (int i = 0; i < nums.Length; i++)
+//    {
+//        if (nums[i] < min)
+//        {
+//            min = nums[i];
+//        }
+//    }
+//    int[] result = new int[nums.Length - 1];
+//    int index = 0;
+
+//    for (int i = 0; i < nums.Length; i++)
+//    {
+//        if (nums[i] != min)
+//        {
+//            result[index] = nums[i];
+//            index++;
+//        }
+//    }
+//    return result;
+//}
+//int[] answers = RemoveMin(new int[] { 1123, 265, 3, 46, 589 });
+
+//foreach (int Number in answers)
+//{
+//    Console.WriteLine(Number);
+//}
+#endregion
+#region Task9
+// Verilmiş stringdə yalnız 1 dəfə işlənmiş ilk simvolu çıxışa ver. (məs: "kərtənkələ"-> 'r')
+//char NAME(string name)
+//{
+//    for (int i = 0; i < name.Length; i++)
+//    {
+//        int count = 0;
+//        for (int j = 0; j < name.Length; j++)
+//        {
+//            if (name[i] == name[j])
+//            {
+//                count++;
+//            }
+//        }
+//        if (count == 1)
+//        {
+//            return name[i]; 
+//        }
+//    }
+//    return ' ';
+//}
+//char result = NAME("kərtənkələ");
+//Console.WriteLine(result); 
+#endregion
+#region Task10
+//string RemoveSpaces(string text)
+//{
+//    string newText = "";
+
+//    for (int i = 0; i < text.Length; i++)
+//    {
+//        if (text[i] != ' ')
+//        {
+//            newText += text[i];
+//        }
+//    }
+
+//    return newText;
+//}
+//string result = RemoveSpaces("Salam dünya necesen");
+//Console.WriteLine(result);
+#endregion
